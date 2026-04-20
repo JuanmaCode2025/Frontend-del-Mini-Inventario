@@ -2,7 +2,7 @@
 
 Interfaz de usuario moderna desarrollada con **Vue 3** y **Quasar Framework**, que consume la API del backend **Mini Inventario** para gestionar productos, clientes y ventas, con integración de **Inteligencia Artificial** para generación de descripciones y recomendaciones inteligentes.
 
-[alt text](./src/assets/login.png)
+![Vista del sistema](./src/assets/login.png)
 [alt text](./src/assets/cretecustomer.png)
 
  * Vestaña de Porductos
