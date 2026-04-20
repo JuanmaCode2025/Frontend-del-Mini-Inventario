@@ -1,6 +1,24 @@
-# 🖥️ FRONTED DEL MINI INVENTARIO 
+# 🖥️ MINI INVENTARIO – Frontend con Vue 3 + Quasar
 
-Interfaz de usuario moderna desarrollada con **Vue 3** y **Quasar Framework**, que consume la API del backend **Mini Inventario** para gestionar productos, clientes y ventas.
+Interfaz de usuario moderna desarrollada con **Vue 3** y **Quasar Framework**, que consume la API del backend **Mini Inventario** para gestionar productos, clientes y ventas, con integración de **Inteligencia Artificial** para generación de descripciones y recomendaciones inteligentes.
+
+[alt text](./src/assets/login.png)
+[alt text](./src/assets/cretecustomer.png)
+
+ * Vestaña de Porductos
+ [alt text](./src/assets/Products.png)
+
+  * Vestaña de Clientes
+ [alt text](./src/assets/Customer.png)
+---
+
+---
+
+## 📋 Requisitos Previos
+
+- **Node.js** v18 o superior
+- **npm** v9 o superior
+- Backend del proyecto ejecutándose (ver [repositorio del backend](https://github.com/JuanmaCode2025/Mini_Inventario_Backend.git))
 
 ---
 
@@ -21,9 +39,6 @@ Interfaz de usuario moderna desarrollada con **Vue 3** y **Quasar Framework**, q
 5. **Registro de ventas**  
    Sistema de ventas con selección de productos y clientes, cálculo automático de totales.
 
-6. **Recomendaciones IA**  
-   Panel inteligente con sugerencias de reabastecimiento y ajuste de precios.
-
 ---
 
 ## 🚀 Características Principales
@@ -32,6 +47,7 @@ Interfaz de usuario moderna desarrollada con **Vue 3** y **Quasar Framework**, q
 - 🎨 **Quasar Framework** – Componentes UI ricos y responsivos
 - 🔐 **Autenticación JWT** – Protección de rutas y manejo de sesión
 - 📦 **Gestión completa** – Productos, clientes y ventas
+- 🤖 **Inteligencia Artificial** – Generación de descripciones y recomendaciones
 - 📱 **Diseño responsive** – Funciona en móvil, tablet y desktop
 - 🧩 **Pinia** – Manejo de estado global
 - 🛣️ **Vue Router** – Navegación entre páginas
@@ -50,11 +66,13 @@ Interfaz de usuario moderna desarrollada con **Vue 3** y **Quasar Framework**, q
 | **Axios**          | Cliente HTTP para consumir API              |
 | **Composition API**| Reactividad y lógica reutilizable           |
 | **JWT**            | Autenticación y autorización                |
+| **Vite**           | Build tool y servidor de desarrollo         |
 
 ---
 
 ## 📁 Estructura del Proyecto
 * 📦 Frontend-mini-inventario
+
 
 ```
 ├── 📁 public
@@ -71,6 +89,7 @@ Interfaz de usuario moderna desarrollada con **Vue 3** y **Quasar Framework**, q
 │   │   ├── 📄 BaseTable.vue
 │   │   └── 📄 CellDesign.vue
 │   ├── 📁 composables
+│   │   ├── 📄 Avatar.js
 │   │   ├── 📄 Dates.js
 │   │   ├── 📄 Mini-composables.js
 │   │   └── 📄 Notifications.js
@@ -92,7 +111,8 @@ Interfaz de usuario moderna desarrollada con **Vue 3** y **Quasar Framework**, q
 │   │   ├── 📄 Dashboard.vue
 │   │   ├── 📄 Login.vue
 │   │   ├── 📄 Products.vue
-│   │   └── 📄 Sales.vue
+│   │   ├── 📄 Sales.vue
+│   │   └── 📄 text.txt
 │   ├── 📄 App.vue
 │   └── 📄 main.js
 ├── ⚙️ .gitignore
@@ -101,8 +121,16 @@ Interfaz de usuario moderna desarrollada con **Vue 3** y **Quasar Framework**, q
 ├── ⚙️ package-lock.json
 ├── ⚙️ package.json
 └── 📄 vite.config.js
-
 ```
+
+---
+
+## 🔗 Repositoria del Backend del Mini Inventario
+
+Puedes probar y ver todos el bakned del mini intertario aquio el link del resporitorio
+
+👉 **link del repositorio**  
+https://github.com/JuanmaCode2025/Mini_Inventario_Backend.git
 
 ---
 
@@ -111,7 +139,11 @@ Interfaz de usuario moderna desarrollada con **Vue 3** y **Quasar Framework**, q
 Pasos de instalación
 bash
 # 1. Clonar el repositorio
-git clone <repo-frontend-url>
+ * Clonar frontend
+git clone https://github.com/JuanmaCode2025/Frontend-mini-inventario.git
+
+ *  Clonar backend
+git clone https://github.com/JuanmaCode2025/Mini_Inventario_Backend.git
 
 # 2. Entrar al directorio
 cd frontend-mini-inventario
@@ -123,25 +155,12 @@ npm install
 npm run dev
 
 
-🧪 Credenciales de Prueba
-text
-Email: admin@test.com
-Contraseña: 123456
+## Comandos Disponibles  
+ * npm run dev : Seviror de desarrollo con hot-reload
+
+
 👨‍💻 Autor
 Juan Manuel Mejía Duarte
 @JuanmaCode2025
 📅 30 de Mayo de 2025
 
-🔗 Repositorios Relacionados
-Backend del proyecto
-
-Colección de Postman
-
-📄 Licencia
-Este proyecto está bajo la licencia MIT.
-
-text
-
----
-
-Este README está completamente adaptado a **Vue 3 + Quasar**, incluyendo la estructura típica de proyecto con Composition API, Pinia, Vue Router, y todas las buenas prácticas. ¿Necesitas que ajuste o agregue algo más?
